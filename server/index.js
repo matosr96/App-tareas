@@ -4,6 +4,7 @@ import indexRoutes from "./routes/index.routes.js";
 import tasksRoutes from "./routes/tasks.routes.js";
 
 const app = express();
+app.use(express.json());
 app.listen(PORT);
 app.use(indexRoutes);
 app.use(tasksRoutes);
