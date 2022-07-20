@@ -1,0 +1,25 @@
+.header {
+  background-color: #003865;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.logo h3 {
+  color: #fff;
+}
+
+.sections {
+  display: flex;
+  gap: 2rem;
+}
+
+.item-header {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.4rem;
+  color: #fff;
+}

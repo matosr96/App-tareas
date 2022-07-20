@@ -1,0 +1,47 @@
+:root{
+    /* --main-color: rgba(65,129, 250, 1); */
+    --background-color: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --main-color: #2164D9;
+    --legacy-blue: #1F2937;
+    --input-hover : #0045AC;
+
+    --bg-light: #F2F2F2;
+    --bg-dark : #000;
+    --bg-body-i : #626669;
+    --bg-elements: #FFF;
+    --bg-input :  rgba(0,0,0,0.05);
+    
+
+    --text-color-one :#a4a5a6;
+    --text-color-two : #333;
+    --text-color-three : #444444;
+    --text-color-four : rgb(164, 165, 166);
+    --text-color-info : #b4c7d2;
+    --text-label-color : #5b13b9;
+    --text-login-color : #495371;
+
+    --remove-color : #ff8d8d;
+    --sell-color : #98ffad; 
+    --header-icon-color : #e4a7fc;
+
+
+    --shadow-color: 132deg 15% 9%;
+    --shadow-elevation-low:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+      0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+      1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-medium:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+      0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+      2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+      5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+    --shadow-elevation-high:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+      1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+      2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+      4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+      7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+      11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+      17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+      25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+}
