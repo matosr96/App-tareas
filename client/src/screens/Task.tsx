@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getTaskRequest } from "../api/tasks.api";
+import { createTaskRequest, getTaskRequest } from "../api/tasks.api";
 import "../styles/tasks.css";
 
 const Task = () => {
@@ -7,6 +7,17 @@ const Task = () => {
   const [openModal, setOpenModal] = useState(false);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+
+  const [openMenu, setOpenMenu] = useState(false);
+  const [item, setItem] = useState("");
+
+  const submitCreateHandler = (e: any) => {
+    e.preventDefault();
+    createTaskRequest({
+      title: title,
+      description: description,
+    });
+  };
 
   useEffect(() => {
     async function loadTask() {
@@ -42,6 +53,7 @@ const Task = () => {
                 <th>Id</th>
                 <th>Titulo</th>
                 <th className="desc">Descripcion</th>
+                <th>Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -50,6 +62,16 @@ const Task = () => {
                   <td>{e.id}</td>
                   <td>{e.title}</td>
                   <td className="desc">{e.description}</td>
+                  <td>
+                    <div className="actions">
+                      <button className="btn-actions edit">
+                        <i className="bx bx-edit"></i>
+                      </button>
+                      <button className="btn-actions trash">
+                      <i className='bx bx-trash' ></i>
+                      </button>
+                    </div>
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -91,7 +113,7 @@ const Task = () => {
             </div>
           </form>
           <div className="modal_footer">
-            <button className="btn">
+            <button className="btn" onClick={submitCreateHandler}>
               <h2>Guardar</h2>
             </button>
           </div>

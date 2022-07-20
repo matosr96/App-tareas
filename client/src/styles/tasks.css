@@ -207,3 +207,30 @@ tbody td {
     border-radius: 0.3rem;
     font-size: 1.2rem;
   }
+
+  .actions{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .btn-actions{
+   
+    border: none;
+    padding: 1rem;
+    border-radius: .4rem;
+  }
+
+  .edit{
+    background-color: #003865;
+  }
+
+  .trash{
+    background-color: #EB4747;
+  }
+
+  .btn-actions i{
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  
